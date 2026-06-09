@@ -80,31 +80,33 @@ body{
 /* ── KANAL BUTONLARI ── */
 .channels{
   display:flex;
-  flex-direction:column;
+  flex-direction:row;
   gap:12px;
-  max-width:400px;
+  max-width:860px;
   margin:0 auto;
+  justify-content:center;
 }
 .chan-btn{
   display:flex;
+  flex-direction:column;
   align-items:center;
-  gap:14px;
-  padding:14px 20px;
+  justify-content:center;
+  gap:10px;
+  padding:18px 16px 14px;
   border-radius:14px;
   text-decoration:none;
   font-weight:700;
   font-size:.95rem;
   transition:transform .15s,filter .15s;
-  position:relative;
-  overflow:hidden;
+  flex:1;
+  text-align:center;
 }
 .chan-btn::after{
   content:'Abone Ol →';
-  position:absolute;
-  right:18px;
-  font-size:.78rem;
+  font-size:.75rem;
   font-weight:600;
   opacity:.85;
+  margin-top:2px;
 }
 .chan-btn:hover{ transform:translateY(-2px); filter:brightness(1.08); }
 .chan-btn svg{ flex-shrink:0; }
@@ -121,7 +123,7 @@ body{
   background:linear-gradient(135deg,#25d366,#128c7e);
   color:#fff;
 }
-.chan-info{ display:flex; flex-direction:column; gap:2px; }
+.chan-info{ display:flex; flex-direction:column; gap:2px; align-items:center; }
 .chan-name{ font-size:1rem; font-weight:800; }
 .chan-sub{ font-size:.75rem; opacity:.8; font-weight:400; }
 
@@ -289,6 +291,7 @@ footer a{ color:var(--brand);text-decoration:none; }
   .deal-cta{display:block;}
   .deal-title{font-size:.84rem;}
   .deals-grid{grid-template-columns:1fr;}
+  .channels{flex-direction:column;max-width:400px;}
 }
 </style>
 </head>
@@ -360,12 +363,12 @@ footer a{ color:var(--brand);text-decoration:none; }
 <!-- DEAL LİSTESİ -->
 <div class="section-header">
   <span class="section-title">Son Fırsatlar</span>
-  <span class="live-dot">Son güncelleme: 09.06.2026 22:56</span>
+  <span class="live-dot">Son güncelleme: 09.06.2026 22:59</span>
 </div>
 
 <div class="container">
   <div class="deals-grid">
-        <a href="https://www.amazon.com.tr/dp/B0GC7DKZHZ?linkCode=ll2&tag=dipfiyat-21&linkId=595381370c524229&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GC7DKZHZ?linkCode=ll2&tag=dipfiyat-21&linkId=c5becd1f855c44eb&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/71FEC+a9xPL._AC_SL1500_.jpg" alt="Minesk AirFlow Mini Taşınabilir Vantilatör. Ayarlanabilir Hız. Dijital Ekran. 3000mAh Batarya. Minimalist ve Şık Tasarım. Kompakt Boyut. Mini Fan" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -381,7 +384,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0B4B6WZJV?linkCode=ll2&tag=dipfiyat-21&linkId=112b8161d51e439c&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0B4B6WZJV?linkCode=ll2&tag=dipfiyat-21&linkId=4011a96191b7433f&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/71CSXgAm44L._AC_SL1500_.jpg" alt="Hawk Gaming Chair FAB Oyuncu Koltuğu (Metallic)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -397,7 +400,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B088PFJCQV?linkCode=ll2&tag=dipfiyat-21&linkId=3998cb3ba15e495f&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B088PFJCQV?linkCode=ll2&tag=dipfiyat-21&linkId=0d6fa06b697440d4&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/41bOnZcphOL._AC_SL1500_.jpg" alt="KIOXIA TransMemory U202 32GB USB Bellek – USB 2.0. Beyaz" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -413,7 +416,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GVW1W3H1?linkCode=ll2&tag=dipfiyat-21&linkId=d65fd376b6e5471e&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GVW1W3H1?linkCode=ll2&tag=dipfiyat-21&linkId=328831b7b4c8421e&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/61Xphltjc6L._AC_SL1341_.jpg" alt="URUCHI iPhone için Özel Geliştirilmiş Kamera Çerçevesini Koruyan. Arkası Şeffaf (Parlak) Polikarbonat Kenarları Silikon Magsafe ile Uyumlu Kılıf Akıllı Tasarım Kapak (Lacivert. iPhone 17 Pro Max)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -429,7 +432,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GX7DR3XV?linkCode=ll2&tag=dipfiyat-21&linkId=a1dff4d7d1374d43&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GX7DR3XV?linkCode=ll2&tag=dipfiyat-21&linkId=5d7cca6941fc420e&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/51jg0PbPT5L._AC_SL1500_.jpg" alt="ROBEVE Cırak Turbo El Vantilatörü 100 Kademeli Ayarlı Güçlü Rüzgar Taşınabilir Fan LED Ekranlı USB-C Şarjlı Sessiz Mini Vantilatör Masaüstü ve Elde Kullanım El Fanı Mini Vantilatör Mini Fan (Mor)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -445,7 +448,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0FFBDMCVH?linkCode=ll2&tag=dipfiyat-21&linkId=9eb705b20ab8474a&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0FFBDMCVH?linkCode=ll2&tag=dipfiyat-21&linkId=934e44e334b44654&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/71F6fAY7ldL._AC_SL1500_.jpg" alt="Camper Erkek Runner K100226-162" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -461,7 +464,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0968YVS5F?linkCode=ll2&tag=dipfiyat-21&linkId=28f711dfccf54420&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0968YVS5F?linkCode=ll2&tag=dipfiyat-21&linkId=2126e34ffa1f4b5b&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/71pY6ipW1EL._AC_SL1500_.jpg" alt="Under Armour UA W Charged Pursuit 3 Koşu Ayakkabısı Kadın" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -477,7 +480,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GW9K427B?linkCode=ll2&tag=dipfiyat-21&linkId=45d30e9dfa124f6b&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GW9K427B?linkCode=ll2&tag=dipfiyat-21&linkId=61695eb19ec44ca5&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/618Dl3PoIPL._AC_SL1024_.jpg" alt="Deconox 6'lı Termisil Borosilikat Cam Kupa Bardak Seti 200 ml - Isıya Dayanıklı Kulplu Şeffaf Çay ve Kahve Bardağı Takımı" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -493,7 +496,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GSKGKJ65?linkCode=ll2&tag=dipfiyat-21&linkId=d0751cd4377449c7&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GSKGKJ65?linkCode=ll2&tag=dipfiyat-21&linkId=25af78086fe94731&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/51V8WHyzlVL._AC_SL1500_.jpg" alt="MallArt® 4'lü Paslanmaz Çelik Buz Küpü Seti - Viski Taşı. İçecekleri Sulandırmayan Tekrar Kullanılabilir Metal Soğutma Küpleri. Özel Saklama Kutulu (Gıda Uyumlu)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -509,7 +512,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GSRQN1QN?linkCode=ll2&tag=dipfiyat-21&linkId=aa48d7b3c97e4a07&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GSRQN1QN?linkCode=ll2&tag=dipfiyat-21&linkId=cf64314ba4d143f1&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/61JkpkueenL._AC_SX679_.jpg" alt="Yuandong Bambu Sushi Sarma Hasırı 24x24 cm | Doğal Bambu Sushi Mat | Sushi Maker için Rulo Sarma Matı | Evde Sushi Yapımı İçin Pratik Mutfak Aleti" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -525,7 +528,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0CZ9SHW6W?linkCode=ll2&tag=dipfiyat-21&linkId=91c25121ac9c49d5&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0CZ9SHW6W?linkCode=ll2&tag=dipfiyat-21&linkId=c3b378bb708949aa&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/61YrCrvYuGL._AC_SL1500_.jpg" alt="Philips 5000 Serisi Izgara ve Tost Makinesi - Ayarlanabilir sıcaklık. Geniş ızgara yüzeyi ve Yüksek Güç performansı. Çıkarılabilir yapışmaz plakalar ve yağ tepsisi (HD6301/90)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -541,7 +544,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GCT91T34?linkCode=ll2&tag=dipfiyat-21&linkId=d190f22125104304&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GCT91T34?linkCode=ll2&tag=dipfiyat-21&linkId=c2da77b7260b41d5&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/61kMo-4xx9L._AC_SL1500_.jpg" alt="Hausgarten 24 Adet Ahşap Görünümlü Plastik A Kalite Siyah Elbise Askı" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -557,7 +560,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0D3HLNGT8?linkCode=ll2&tag=dipfiyat-21&linkId=e36600fb38e5493d&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0D3HLNGT8?linkCode=ll2&tag=dipfiyat-21&linkId=71fe097db86445e7&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/71mWZ3lx4yL._AC_SL1500_.jpg" alt="Orret Home 20 Adet Dolap İçi Elbise Askısı.Pantolon.Gömlek.Ceket.Etek Askısı.Gardrop İçin Slim Plastik Askı (20 Adet)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -573,7 +576,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0FHH6LZ5P?linkCode=ll2&tag=dipfiyat-21&linkId=88a974ac70c4467c&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0FHH6LZ5P?linkCode=ll2&tag=dipfiyat-21&linkId=ba7f2d51be2b4233&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/71OU6EF5QQL._AC_SL1500_.jpg" alt="Titanseat Beast Chromium Kumaş Oyuncu Koltuğu" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -589,7 +592,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0H11K71T3?linkCode=ll2&tag=dipfiyat-21&linkId=49449cf23e714f8c&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0H11K71T3?linkCode=ll2&tag=dipfiyat-21&linkId=16b146f5d1bf4ca7&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/61LRfQlZZ0L._AC_SL1024_.jpg" alt="Deconox Paslanmaz Çelik Örümcek Ağı Yağ Kevgiri - Ahşap Saplı Tel Süzgeç Kızartma ve Haşlama Kepçesi (12 cm ve 14 cm Boy Seçenekli) (14 CM)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -605,7 +608,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GWN8SMK6?linkCode=ll2&tag=dipfiyat-21&linkId=0f75ffbdbe4a4d68&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GWN8SMK6?linkCode=ll2&tag=dipfiyat-21&linkId=567bcd232ce240dc&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/712OQq-DqzL._AC_SL1500_.jpg" alt="ROBEVE İkili Kablosuz Yaka Mikrofonu Type C Android iPhone Uyumlu Canlı Yayın Ses Video Mikrofonu" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -621,7 +624,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0FHHL6NY8?linkCode=ll2&tag=dipfiyat-21&linkId=1b2198931d354e2a&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0FHHL6NY8?linkCode=ll2&tag=dipfiyat-21&linkId=ca974f7c08db431f&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/61XYRtawi2L._AC_SL1500_.jpg" alt="Titanseat Beast Black Kumaş Oyuncu Koltuğu" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -637,7 +640,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B08W34BD8J?linkCode=ll2&tag=dipfiyat-21&linkId=d799e70567694d0e&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B08W34BD8J?linkCode=ll2&tag=dipfiyat-21&linkId=8e8578c9b9c545be&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/615XjagwA-L._SL1080_.jpg" alt="Bluefox Dijital Mutfak Terazisi - Paslanmaz Çelik Yüzeyli Hassas Mutfak Tartısı - Dara İşlevi. LED Ekran. 5 Birim Dönüştürme ve Otomatik Kapanma Özellikli - 5 kg Tartı Kapasitesi" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -653,7 +656,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B07T7M2VT2?linkCode=ll2&tag=dipfiyat-21&linkId=4c97face0686468c&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B07T7M2VT2?linkCode=ll2&tag=dipfiyat-21&linkId=adbaa2fa692a4cad&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/71PbpzQMMtL._AC_SL1500_.jpg" alt="H2ofloss Şarjlı Kablosuz Ağız Duşu. Hızlı ve Etkili Diş Arası Temizliği – 300 ml Su Hazneli. 5 Modlu. 6 Başlıklı. IPX7 Su Geçirmez. Diş Taşı Temizliği (Beyaz)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -669,7 +672,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GVW1SHSM?linkCode=ll2&tag=dipfiyat-21&linkId=c6a5fb11fa674bd6&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GVW1SHSM?linkCode=ll2&tag=dipfiyat-21&linkId=25041f82962f4ca0&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/61+w3ZkJhmL._AC_SL1345_.jpg" alt="URUCHI iPhone için Özel Geliştirilmiş Kamera Çerçevesini Koruyan. Arkası Şeffaf (Parlak) Polikarbonat Kenarları Silikon Magsafe ile Uyumlu Kılıf Akıllı Tasarım Kapak (Gri. iPhone 17 Pro Max)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -685,7 +688,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GTVW4LCJ?linkCode=ll2&tag=dipfiyat-21&linkId=d139961e6ee54af7&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GTVW4LCJ?linkCode=ll2&tag=dipfiyat-21&linkId=cfcf992f14b043d9&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/71dj4YNirfL._AC_SL1500_.jpg" alt="Babilden iPhone ile Uyumlu Kılıf Magsafe Şarjlı Karbon Fiber ArmorAir Kesik Kenarlı Kapak Siyah iPhone 17 Pro Max" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -701,7 +704,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GW9K617R?linkCode=ll2&tag=dipfiyat-21&linkId=d9af90583b4c4248&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GW9K617R?linkCode=ll2&tag=dipfiyat-21&linkId=082c1c2f0f864c1f&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/715KcIP1IaL._AC_SL1500_.jpg" alt="Kule Tipi Vantilatör. Uzaktan Kumandalı. 3 Kademeli Hız Ayarı. 7.5 Saat Zamanlayıcı. Salınımlı Sessiz Fan. 45W. Ev Ofis Yatak Odası İçin" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -717,7 +720,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0B8CLMYR1?linkCode=ll2&tag=dipfiyat-21&linkId=a7531164dade46e5&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0B8CLMYR1?linkCode=ll2&tag=dipfiyat-21&linkId=5871a12f40fe4007&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/61CBgK4v5rL._AC_SL1000_.jpg" alt="Tommy Hilfiger Erkek ESSENTIAL PU WASHBAG Çanta Black Tek Beden" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -733,7 +736,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GCLTMTM3?linkCode=ll2&tag=dipfiyat-21&linkId=93334f21ca9e4b2b&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GCLTMTM3?linkCode=ll2&tag=dipfiyat-21&linkId=834a593ead904eed&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/51tkS-8fuRL._AC_SL1500_.jpg" alt="Xiaomi Redmi Buds 8 Pro Beyaz Kulakiçi Kulaklık TWS - ANC BT 5.4" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -749,7 +752,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GWTX3DR2?linkCode=ll2&tag=dipfiyat-21&linkId=a53c7bb4829e40e6&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GWTX3DR2?linkCode=ll2&tag=dipfiyat-21&linkId=7e23942ff6e54432&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/41MODXbK6lL._AC_SL1024_.jpg" alt="Ev Tipi Kule Tipi Vantilatör & Soğutucu – 70W Güçlü Hava Akışı. 3 Kademe Hız. 3L Su Tanklı Nemlendirici. 24 Saat Zamanlayıcı. Sessiz Çalışma (29 dB). Uzaktan Kumandalı. LCD Ekranlı" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -765,7 +768,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0CF65VWGJ?linkCode=ll2&tag=dipfiyat-21&linkId=c3632f3e93b54886&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0CF65VWGJ?linkCode=ll2&tag=dipfiyat-21&linkId=ca02c232ddd14897&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/7121mc3AH0L._AC_SL1500_.jpg" alt="Camper K100864 Drift Trail Sneakers Siyah Erkek Spor Ayakkabı" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -781,7 +784,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B07P7B2XHT?linkCode=ll2&tag=dipfiyat-21&linkId=f390fd661f0d4b62&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B07P7B2XHT?linkCode=ll2&tag=dipfiyat-21&linkId=4f000e5896c447c9&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/61FzFgjMrsL._AC_SL1500_.jpg" alt="Stanley Classic Legendary Vakumlu Çelik Termos. 1.9 L" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -797,7 +800,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0C3MXDMPP?linkCode=ll2&tag=dipfiyat-21&linkId=a6f557c2e38d4bfe&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0C3MXDMPP?linkCode=ll2&tag=dipfiyat-21&linkId=8233926f0e6d4ad0&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/71Eeo3vrI4L._AC_SL1500_.jpg" alt="Stanley Quencher Pipetli Termos Bardak. 0.89 L" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -813,7 +816,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B01DEWVZ2C?linkCode=ll2&tag=dipfiyat-21&linkId=984fcae612664adc&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B01DEWVZ2C?linkCode=ll2&tag=dipfiyat-21&linkId=a479de64abfc480a&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/51Q8DUDT2eL._AC_SL1500_.jpg" alt="JBL C100SI. Kulaklık. CT. IE. Siyah" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -829,7 +832,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0F2GQW6PM?linkCode=ll2&tag=dipfiyat-21&linkId=0375b88ed7244609&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0F2GQW6PM?linkCode=ll2&tag=dipfiyat-21&linkId=3c721a7671ed4563&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/41H5dqXHxzL._AC_SL1500_.jpg" alt="Tavan Vantilatörü Led Işık 3 Renk Işık Sıcaklığı Ayarlanabilir 3 Kademe Hız Modu Sessiz 52 Cm Çap 6 Kanat Uzaktan Kumandalı Vantilatör (Beyaz)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -845,7 +848,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0FFD6FZGL?linkCode=ll2&tag=dipfiyat-21&linkId=2910f75163804247&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0FFD6FZGL?linkCode=ll2&tag=dipfiyat-21&linkId=c1ca435354014f6a&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/71m6OK33-KL._AC_SL1200_.jpg" alt="Tarix Vakumlu Hurç. Dolap Düzenleyici Elbise Saklama Poşeti.%80 Yer Tasarrufu.1adet 90x60cm.1adet 105x70cm.1adet 145x70cm (Elbise Seti 3'lü)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -861,7 +864,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0G58NZ4RC?linkCode=ll2&tag=dipfiyat-21&linkId=d1bbf224b0e243b0&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0G58NZ4RC?linkCode=ll2&tag=dipfiyat-21&linkId=9c60f1a8ecdf4056&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/61GYmYpYVbL._AC_SL1500_.jpg" alt="Samsung Galaxy S26 Ultra İnce Magnet Kılıf. Siyah" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -877,7 +880,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GWMWPW8D?linkCode=ll2&tag=dipfiyat-21&linkId=eb298d7d7bab44d6&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GWMWPW8D?linkCode=ll2&tag=dipfiyat-21&linkId=6d2a5f7609994266&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/717kiWFYzYL._AC_SL1500_.jpg" alt="Ehr. iPhone 17 ile Uyumlu Magsafe Wireless Şarj Özellikli Kamera Standlı Lüks Mat Silikon Kılıf [Lens Koruyucu Hediyeli] (Mor. iPhone 17)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -893,7 +896,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GT28QBYW?linkCode=ll2&tag=dipfiyat-21&linkId=42129b39bda6455c&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GT28QBYW?linkCode=ll2&tag=dipfiyat-21&linkId=417cefdd4514447f&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/61yYTRighhL._AC_SL1500_.jpg" alt="Doğal Ahşap Tatlı Kaşığı Seti. 17 cm. 6 Adet - Verniksiz El Yapımı Tahta Kaşık. Tatlı ve Baharat Servis Kaşığı. Şık Sunum ve Sofra Aksesuar" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -909,7 +912,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B07FNVH713?linkCode=ll2&tag=dipfiyat-21&linkId=997e2fd196114aae&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B07FNVH713?linkCode=ll2&tag=dipfiyat-21&linkId=688e2c726bfb46f8&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/51p9HsEM4NL._AC_SL1000_.jpg" alt="Kodak RGP4RRC-260-10X15 Inkjet Fotoğraf Kağıdı. 100 Adet. Mürekkepli Yazıcı Uyumlu" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -925,7 +928,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GYZ6RYTY?linkCode=ll2&tag=dipfiyat-21&linkId=e536c1718d98419b&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GYZ6RYTY?linkCode=ll2&tag=dipfiyat-21&linkId=125361ddc7104452&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/61kS2Usxi7L._AC_SL1500_.jpg" alt="Erkek Baggy Kalıp Beli Lastikli%100 Pamuk Keten Görünümlü Pantolon 1007DNGR" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -941,7 +944,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GX7B8C7Z?linkCode=ll2&tag=dipfiyat-21&linkId=8ef01351d06842d0&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GX7B8C7Z?linkCode=ll2&tag=dipfiyat-21&linkId=398d4b1b34874694&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/61rqX9gJgvL._AC_SL1500_.jpg" alt="ROBEVE Blic BWFN22 Turbo El Vantilatörü Mini Fan Vantilatör Katlanabilir 3’ü 1 Arada Taşınabilir Fan 5 Kademeli LED Ekranlı USB-C Şarjlı Mini Vantilatör Boyun Askılı Masaüstü Kullanım (Siyah)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -957,7 +960,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0CXJJWGDY?linkCode=ll2&tag=dipfiyat-21&linkId=ad1c59dc9bd84f0f&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0CXJJWGDY?linkCode=ll2&tag=dipfiyat-21&linkId=a37fe6e3c21747c9&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/711URckCV2L._AC_SL1500_.jpg" alt="Camper K100998 Norman Deri Siyah Erkek Ayakkabı" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -973,7 +976,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GNZW3MFK?linkCode=ll2&tag=dipfiyat-21&linkId=eae84eb563554aa1&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GNZW3MFK?linkCode=ll2&tag=dipfiyat-21&linkId=959f7e1c26b74234&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/41xwLxOcLNL._AC_SL1000_.jpg" alt="Samsung Galaxy Buds4 Pro Bluetooth Kulaklık. Siyah. Metal Gövde. 2 Yollu Hoparlör & Çift Amplifikatör. Geliştirilmiş ANC. Adaptif Gürültü Kontrolü" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -989,7 +992,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0G58QR6CY?linkCode=ll2&tag=dipfiyat-21&linkId=18e437f3641c4176&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0G58QR6CY?linkCode=ll2&tag=dipfiyat-21&linkId=30f525572b994b7c&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/619Td8H+ijL._AC_SL1500_.jpg" alt="Samsung Galaxy S26 Ultra Şeffaf Kılıf" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -1005,7 +1008,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0H1MZV66D?linkCode=ll2&tag=dipfiyat-21&linkId=9b98f1aea94d462e&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0H1MZV66D?linkCode=ll2&tag=dipfiyat-21&linkId=7f8126d7c9f040de&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/616hrejOIPL._AC_SL1024_.jpg" alt="Sinbo SF-7705 Ayaklı Vantilatör 16 İnç 45W Sessiz Fan 3 Kademeli Yükseklik Ayarlı Güçlü" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -1021,7 +1024,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GYZ54FLM?linkCode=ll2&tag=dipfiyat-21&linkId=0b9b119a795f40ec&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GYZ54FLM?linkCode=ll2&tag=dipfiyat-21&linkId=4d3aa8b822b34492&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/61eAuFxt3HL._AC_SL1500_.jpg" alt="Xiaomi Mi 15T Pro Uyumlu Kamera Korumalı Magsafe İle Uyumlu Wireless Şarj Özellikli MGSF001 Şeffaf Kılıf (Şeffaf. Mi 15T Pro)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -1037,7 +1040,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GY5M69GC?linkCode=ll2&tag=dipfiyat-21&linkId=6f515f29d60644a5&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GY5M69GC?linkCode=ll2&tag=dipfiyat-21&linkId=148df18482e64c35&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/71h7JcdjKiL._AC_SL1254_.jpg" alt="ROBEVE Masaüstü Şarjlı Vantilatör Katlanabilir Taşınabilir Fan – 3 Kademeli Hız. USB Şarjlı. Uzun Pil Ömrü. Sessiz Çalışma. Ofis Ev Seyahat İçin Mini Fan - Taşınabilir Vantilatör" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -1053,7 +1056,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GTRYK5ZZ?linkCode=ll2&tag=dipfiyat-21&linkId=9cce65cc34384d37&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GTRYK5ZZ?linkCode=ll2&tag=dipfiyat-21&linkId=1f7bb73e8aa8439d&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/415Rf84DwlL._AC_SL1024_.jpg" alt="Exonix SP21 Usb Şarj Edilebilir Çift Düğmeli Mini Su Pompası 1200mAh Pilli" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -1069,7 +1072,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GZVCR66T?linkCode=ll2&tag=dipfiyat-21&linkId=cc9e88e30f424189&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GZVCR66T?linkCode=ll2&tag=dipfiyat-21&linkId=d300082524a74792&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/71vOSfIMD9L._AC_SL1500_.jpg" alt="Haustier W2 Otomatik Kedi Su Sebili Uyumlu Filtre Seti (6 Adet)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -1085,7 +1088,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0GWD3PDJR?linkCode=ll2&tag=dipfiyat-21&linkId=3f9fe88fc2114806&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0GWD3PDJR?linkCode=ll2&tag=dipfiyat-21&linkId=35b29f5dffca4da5&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/71QX21xbHOL._AC_SL1500_.jpg" alt="Fellas Nohut Cipsi - Mevsim Yeşillikleri (50 g)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -1101,7 +1104,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0F79CYJX8?linkCode=ll2&tag=dipfiyat-21&linkId=b617bc47ae6d4f4f&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0F79CYJX8?linkCode=ll2&tag=dipfiyat-21&linkId=1106da20ce8f4a67&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/61eG18MYHIL._AC_SL1500_.jpg" alt="Orret Home Şemsiye Şeklinde Katlanabilir Oto Güneşlik ve Oto Numaratör Seti – Araç Güneşliği. Otomobil Ön Cam Güneşlik. Araba Güneşliği. Numaratör Hediyeli Güneş Koruyucu (140x79 cm)" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -1117,7 +1120,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B08GLMV35J?linkCode=ll2&tag=dipfiyat-21&linkId=08fa2262b2564dbe&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B08GLMV35J?linkCode=ll2&tag=dipfiyat-21&linkId=a9963e44c42e41e1&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/51V+FFB9oqL._AC_SL1500_.jpg" alt="Rotring Jel Kalem 0.7 mm. Mavi - 2114437" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -1133,7 +1136,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B0FNNBY4W4?linkCode=ll2&tag=dipfiyat-21&linkId=359559e4f9204bc1&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B0FNNBY4W4?linkCode=ll2&tag=dipfiyat-21&linkId=7da87418bd9b4a2d&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/41fcTK5WqXL._AC_SL1500_.jpg" alt="Pink & Blue Home - Pat Pat. Balonlu Naylon. Ambalaj Malzemesi (Taşınma. Taşıma. Paketleme) - 100cm x 5m" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -1149,7 +1152,7 @@ footer a{ color:var(--brand);text-decoration:none; }
           <div class="deal-cta">Fırsata Git →</div>
         </a>
         
-        <a href="https://www.amazon.com.tr/dp/B07L7Q3ZXX?linkCode=ll2&tag=dipfiyat-21&linkId=70db6a3ea3b74b31&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
+        <a href="https://www.amazon.com.tr/dp/B07L7Q3ZXX?linkCode=ll2&tag=dipfiyat-21&linkId=56be3975548c4e76&ref_=as_li_ss_tl" class="deal-card" target="_blank" rel="noopener">
           <div class="deal-img">
             <img src="https://m.media-amazon.com/images/I/51vIjHNP2pL._AC_SL1280_.jpg" alt="le petit marseillais duş jeli men serisi mineral ve sedir ağacı (400 ml)" loading="lazy" onerror="this.style.display='none'">
           </div>
